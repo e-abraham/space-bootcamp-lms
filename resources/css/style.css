@@ -22,16 +22,7 @@
 
 }
 
-.header-nav {
-	width:  70%;
-    display:  flex;
-    height: 10vh;
-}
 
-.nav-item {
-	width:  50%;
-	margin-top: 10vh;
-}
 .header-container{
 	display: flex;
 	flex-direction: column;
@@ -73,6 +64,17 @@
     padding-right: 30px;
 }
 
+.header-nav {
+	width:  70%;
+    display:  flex;
+    height: 10vh;
+}
+
+.nav-item {
+	width:  50%;
+	margin-top: 10vh;
+}
+
 .main{
     display: flex;
     flex-direction: column;
@@ -100,7 +102,50 @@
 
 }
 
-@media (max-width: 1100px){
+
+/* Media queries for the home page */
+
+@media (max-width:  550px) {
+	.header-container{
+		width: calc(100% - 20px);
+		height: calc(10% - 15px);
+	}
+}
+
+/* Media queries for theView student page */
+
+@media (max-width:  550px) {
+	.header-nav{
+		width: calc(90% - 20px);
+		height: calc(10% - 15px);
+
+
+
+	}
+	#logo{
+		display:none;
+
+	}
+	#logo-tag h1{
+		/* width: calc(10% - 20px); */
+		font-size: 0.75 rem;
+		}
+	/* .header-nav {
+		width:  70%;
+		display:  flex;
+		height: 10vh;
+	}
+	
+	.nav-item {
+		width:  50%;
+		margin-top: 10vh;
+	} */
+	
+}
+
+
+
+/* @media (max-width: 1100px){
 	.main-gallery-img{
 		width: calc(33% - 20px);
 	}
@@ -124,4 +169,4 @@
 		opacity: 0.6;
 	}
 
-}
+} */
