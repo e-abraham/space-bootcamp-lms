@@ -5,8 +5,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-		<link href="/resources/css/style.css" rel="stylesheet">
-		<title>Puppers of NY</title>
+		<link href="../resources/css/style.css" rel="stylesheet">
+		<title>View students</title>
 	</head> 
 	<body>
 		<div class="container">
@@ -34,23 +34,60 @@
 				</nav>
 			</header>
 			<main class="main">
-				<div class="main-gutter"></div>
-				<section class="main-gallery">
-					<img class="main-gallery-img" src="/public/img/issa.jpg "/>
-					<img class="main-gallery-img" src="/public/img/patrice.jpg "/>
-					<img class="main-gallery-img" src="/public/img/peanut.jpg "/>
-					<img class="main-gallery-img" src="/public/img/remy.jpg "/>
-					<img class="main-gallery-img" src="/public/img/riz.jpg "/>
-					<img class="main-gallery-img" src="/public/img/shila-kahlua.jpg "/>
-					<img class="main-gallery-img" src="/public/img/winston.jpg "/>
-					<img class="main-gallery-img" src="/public/img/raffi.jpg "/>
-					<img class="main-gallery-img" src="/public/img/wilbur.jpg "/>
-					
-				</section>
-				<div class="main-gutter"></div>
+                    <div class="dropdown">
+                            <form action="">
+                                    <label for="campus">Filter by location</label>
+                                    <select name="campus" id="campus" multiple>
+                                        <option value="All">All</option>
+                                        <option value="Mars">Mars</option>
+                                        <option value="Moon">Moon</option>
+                                        <option value="Saturn">Saturn</option>
+                                    </select>
+                                </form>
+                    
+                    </div>
+                    <div class="table-container">
+                    <table class="table">
+                            <tr>
+                              <th>First Name</th>
+                              <th>Last Name</th>
+                              <th>Location</th>
+                              <th>Actions</th>
+                            </tr>
+                            <tr>
+                              <td>Alfreds </td>
+                              <td>Maria </td>
+                              <td>Saturn</td>
+                              <td><a href="">Unenroll</a>
+                              </td>
+                            </tr>
+                            <tr>
+                                <td>Alfreds </td>
+                                <td>Maria </td>
+                                <td>Saturn</td>
+                                <td><a href="">Unenroll</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Alfreds </td>
+                                <td>Maria </td>
+                                <td>Saturn</td>
+                                <td><a href="">Unenroll</a>
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td>Alfreds </td>
+                                <td>Maria </td>
+                                <td>Saturn</td>
+                                <td><a href="">Unenroll</a>
+                                </td>
+                            </tr>
+                          </table>
+
+                        
+                </div>
 			</main>
 			<footer class="footer">
-				<h4>Copyright 2021</h4>
 			</footer>
 		</div>
 	</body>
